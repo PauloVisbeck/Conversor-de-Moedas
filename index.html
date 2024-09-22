@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+    <header>    
+        <h1>DEV PAULO VISBECK</h1>
+    </header>
+
+    <nav>
+
+    </nav>
+
+    <section>
+        <div id="imagem-de-fundo">
+           <img src="./img/moedas.png" alt=""> 
+        </div> 
+
+        <!-- Cotação das moedas do site: https://www.infomoney.com.br/ferramentas/cambio/ em 22/09/2024 -->
+        <div id="conversor">
+            <h2>Conversor de Moedas</h2>
+            <div id="cotacao-moedas">
+                <table class="cotacao">
+                    <thead>
+                        <tr>
+                            <th>Moeda</th>
+                            <th>País</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>                    
+                    <tbody>
+                        <tr>
+                            <td>Dólar</td>
+                            <td>
+                                <img class="bandeiras" src="https://www.infomoney.com.br/wp-content/themes/infomoney/assets/img/us.webp" alt="Dólar Comercial">
+                            </td>
+                            <td>5,54</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Euro</td>
+                            <td>
+                                <img class="bandeiras" src="https://www.infomoney.com.br/wp-content/themes/infomoney/assets/img/eu.webp" alt="Euro">
+                            </td>
+                            <td>6,15</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Libra</td>
+                            <td>
+                                <img class="bandeiras" src="https://www.infomoney.com.br/wp-content/themes/infomoney/assets/img/gb.webp" alt="Libra Esterlina"> 
+                            </td>
+                            <td>7,33</td>
+                        </tr>
+                    </tbody>                    
+                </table>                 
+            </div>
+
+            <!-- Seletores de Valores -->
+            <label for="">
+                Converter de
+                <select name="" id="">
+                    <option value="real">R$ - Real brasileiro</option>
+                </select> 
+            </label>
+            <label for="">
+                Converter para
+                <select name="" id="escolha">
+                    <option value="dolar">US$ - Dolar americano</option>
+                    <option value="euro">€ - Euro europeu</option>
+                    <option value="libra">£ - Libra esterlina (Reino Unido)</option>
+                </select>
+            </label>
+
+            <div id="resultado-conversao">
+                <div id="logo-moeda1"></div>
+                <span id="valor-moeda1">Valor em Real:</span>
+                <input id="vlrMoeda1" type="text" placeholder="Informe Valor">
+                <div id="seta"></div>
+                <div id="logo-moeda2"></div>
+                <span id="valor-moeda2">Valor Convertido:</span>
+                <input id="vlrMoeda2" type="text">
+                <!-- <button class="abacate" style="height: 40px; width: 200px;">OK</button> -->
+            </div>             
+            
+            
+        </div>
+        
+    </section>
+
+    <footer>
+        <h4 id="copyright">2024 - © by Paulo Visbeck</h4>
+    </footer>
+    
+</body>
+
+<script src="./script.js"></script>
+
+</html>
