@@ -12,14 +12,14 @@ html, body {
 
 #imagem-de-fundo {
      width: 100vw;
-    height: 90vh; /* A div ocupa 90vh de altura */
+    height: 90vh;
     position: absolute;
     z-index: -1;
 }
 
 img {
     width: 100%;
-    height: 100%; /*A imagem ocupa 100% da altura da div onde está dentro*/    
+    height: 100%;   
 }
 
 header {
@@ -28,9 +28,7 @@ header {
     background: black         
 }
 
-header h1 {
-    /* background-image: linear-gradient(45deg, rgb(149, 11, 5), rgb(67 231 173), rgb(226 212 292)); */
-    /* background-image: linear-gradient(45deg, rgb(58, 11, 201), rgb(241, 180, 180), rgb(226 212 292)); */
+header h1 {   
     background-image: linear-gradient(45deg, rgb(149, 114, 252), rgb(115, 243, 29), rgb(226 212 92));
     background-clip: text;
     -webkit-background-clip: text;
@@ -40,13 +38,11 @@ header h1 {
 }
 
 nav {
-    flex-shrink: 0; /* Impede que o elemento seja reduzido quando o espaço disponível for menor do que necessário. Isso garante que o nav mantenha seu tamanho original. */
+    flex-shrink: 0; 
 }
 
 section {
-    flex: 1; /* Faz com que a seção principal cresça e ocupe todo o espaço disponível restante no contêiner flexível.*/
-    /* position: relative;  */
-    /* z-index: 1; */
+    flex: 1; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,8 +62,7 @@ h2 {
     /* background-color:darkgrey; */
     border-radius: 15px;
     align-items: center;
-    text-align: center;
-    /* opacity: 0.7;  Aplica transparência em toda a div incluindo nos demais elementos dentro dela */
+    text-align: center;   
 }
 
 #resultado-conversao {
@@ -76,8 +71,7 @@ h2 {
     border-radius: 10px;
     border: 1px solid white;
     padding: 10px;
-    margin-top: 10px;
-    /* background-color: #D2B48C; */
+    margin-top: 10px;    
     background-color: blue;     
 }
 
@@ -141,7 +135,7 @@ input {
     border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 5px;
-    padding-left: 5px; /* Espaçamento entre o valor e a borda do input */
+    padding-left: 5px;
     font-size: 20px;
 }
 
